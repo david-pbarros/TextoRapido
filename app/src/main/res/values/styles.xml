@@ -1,0 +1,60 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textAppearanceLarge">@style/AppTheme.TextAppearance</item>
+		<item name="android:textAppearanceMedium">@style/AppTheme.TextAppearance</item>
+		<item name="android:textAppearanceSmall">@style/AppTheme.TextAppearance</item>
+		
+		<item name="android:alertDialogTheme">@style/AppTheme.Dialog</item>
+        <item name="android:dialogTheme">@style/AppTheme.Dialog</item>
+    </style>
+    
+    <style name="AppTheme.TextAppearance">
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:textSize">15sp</item>
+    </style> 
+    
+    <style name="AppTheme.TextAppearance.label">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="spinner_style" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <!-- Dialog Itens -->
+    <style name="AppTheme.Dialog" parent="@style/AppTheme">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:alertDialogStyle">@style/AppTheme.Dialog.Style</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        
+        <item name="android:textAppearanceLarge">@style/AppTheme.TextAppearance.Black</item>
+		<item name="android:textAppearanceMedium">@style/AppTheme.TextAppearance.Black</item>
+		<item name="android:textAppearanceSmall">@style/AppTheme.TextAppearance.Black</item>
+    </style>
+    
+    <style name="AppTheme.Dialog.Style" parent="@android:style/Theme.Holo.Dialog">
+		<item name="android:topDark">@drawable/dialog_title</item>
+		<item name="android:bottomDark">@drawable/dialog_footer</item>
+		<item name="android:bottomBright">@drawable/dialog_footer</item>
+		<item name="android:bottomMedium">@drawable/dialog_footer</item>
+        <item name="android:centerDark">@drawable/dialog_body</item>
+	</style>
+	
+    <style name="AppTheme.TextAppearance.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <!-- Dialog Itens / -->
+</resources>

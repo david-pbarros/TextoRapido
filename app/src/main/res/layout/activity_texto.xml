@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.dbcorp.textorapido.atividades.TextoActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/top_back">
+
+<RelativeLayout 
+    android:id="@+id/insert"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants">
+    
+    <LinearLayout
+        android:id="@+id/livroContainer"
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_alignParentTop="true"
+   		android:padding="10dp"
+   		android:paddingBottom="0dp"
+   		android:orientation="horizontal">
+   		
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/livro"
+            style="@style/AppTheme.TextAppearance.label"/>
+        
+        <Spinner 
+            android:id="@+id/livros"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:spinnerMode="dropdown"
+			android:focusable="true"
+			style="@style/spinner_style"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/capContainer"
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_below="@id/livroContainer"
+   		android:padding="10dp"
+   		android:paddingTop="0dp"
+   		android:orientation="horizontal">
+   		
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capitulo"
+            style="@style/AppTheme.TextAppearance.label"/>
+        
+        <EditText
+	        android:id="@+id/capitulo"
+	        android:layout_width="55dp"
+	        android:layout_height="wrap_content"
+	        android:inputType="number"
+            android:textColor="@color/text_default"
+            android:nextFocusDown="@+id/versiculos"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/versiculos"
+            style="@style/AppTheme.TextAppearance.label"/>
+        
+        <EditText
+	        android:id="@+id/versiculos"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="text"
+            android:textColor="@color/text_default"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/abrContainer"
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_below="@id/capContainer"
+   		android:padding="10dp"
+   		android:paddingTop="0dp"
+   		android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/abreviacao"
+            style="@style/AppTheme.TextAppearance.label"/>
+        
+        <EditText
+	        android:id="@+id/abreviacao"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="textCapSentences"
+            android:textColor="@color/text_default"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/textoContainer"
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_below="@id/abrContainer"
+   		android:padding="10dp"
+   		android:paddingTop="0dp"
+   		android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/texto"
+            style="@style/AppTheme.TextAppearance.label"/>
+        
+        <EditText
+	        android:id="@+id/texto"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="textMultiLine|textCapSentences"
+	        android:singleLine="false"
+            android:textColor="@color/text_default"/>
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:id="@+id/buttonArea"
+	    style="?android:attr/buttonBarStyle"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/textoContainer"
+	    android:orientation="horizontal" >
+
+	    <Button
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="2dp"
+	        android:text="@string/btCancela"
+	        android:textColor="@color/text_default"
+	        android:background="@color/button_back"
+	        android:onClick="voltar"/>
+	
+	    <Button
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_marginRight="2dp"
+	        android:text="@string/btOK"
+	        android:textColor="@color/text_default"
+	        android:background="@color/button_back"
+	        android:onClick="confirmar"/>
+	</LinearLayout>
+</RelativeLayout>
+</ScrollView>

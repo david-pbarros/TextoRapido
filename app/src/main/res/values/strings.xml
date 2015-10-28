@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- botoes -->
+    <string name="btProcura">Procurar</string>
+    <string name="btCancela">Cancelar</string>
+    <string name="btOK">Confirmar</string>
+    <string name="btImport">Importar Textos</string>
+    <string name="btExport">Exportar Textos</string>
+    <string name="btInfo">Informações</string>
+    <string name="btSair">Sair</string>
+    <!-- botoes fim -->
+
+
+    <!-- labels -->
+    <string name="procurar">Procurar:</string>
+    <string name="livro">Livro:</string>
+    <string name="capitulo">Capítulo:</string>
+    <string name="versiculos">Versículo(s):</string>
+    <string name="abreviacao">Abreviação:</string>
+    <string name="texto">Texto Completo:</string>
+    <!-- fim labels -->
+
+
+    <!-- imgDescription -->
+    <string name="img_icone">icone</string>
+    <string name="img_line">linha</string>
+    <!-- imgDescription fim -->
+
+    <string name="app_name">Texto Rapido</string>
+    <string name="title_activity_insert">InsertActivity</string>
+    <string name="title_activity_file">FileActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint">palavras para procura</string>
+    <string name="textos">Textos Cadastrados</string>
+
+</resources>
